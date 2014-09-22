@@ -1,9 +1,9 @@
 # Site settings
 title: Redmaner
-email: your-email@domain.com
+copyright: (c) 2014, all rights reserved
 description: > # this means to ignore newlines until "baseurl:"
-  Redmaner, known for my Android projects such as GingerReal and MIUI.
-  Now I am a simple blogger, developer and designer. 
+  Redmaner, known for Android projects such as GingerReal and MIUI.
+  Now a simple blogger, developer and designer. 
   Continue if you like technology and (digital) laws just like I do.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://redmaner.github.io" # the base hostname & protocol for your site
