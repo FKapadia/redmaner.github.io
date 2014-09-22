@@ -21,6 +21,10 @@
     &:visited {
         color: $grey-color-dark;
     }
+
+    &:hover {
+	text-decoration: none;
+    }
 }
 
 .site-nav {
@@ -32,12 +36,17 @@
     }
 
     .page-link {
-        color: $flat-black;
+        color: $flat-red;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
+        }
+
+    	&:hover {
+            color: $flat-black;
+            text-decoration: underline;
         }
     }
 
@@ -199,6 +208,21 @@
     }
 }
 
+.post-discription {
+    display: block;
+}
+
+a.post-end {
+    display: inline-block;
+    text-decoration: none;
+    background-color: $flat-black;
+    color: $text-color-light;
+    padding: 7px 15px 7px 15px;
+
+    &:hover {
+        background-color: $flat-red;
+    }
+}
 
 
 /**

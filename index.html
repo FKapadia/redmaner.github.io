@@ -11,15 +11,11 @@ layout: default
       <li>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	<span class="post-discription">{{ post.discription }}</span>
       </li>
-      <div class="discription">
-	 {{ post.discription }}
-      </div>
     {% endfor %}
   </ul>
 
-  <div class="end">
-     <a href="/archive/">More posts...</a>
-  </div>
+  <a class="post-end" href="/archive/">More posts</a>
 
 </div>
