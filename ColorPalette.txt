@@ -1,0 +1,2 @@
+Flat Red = ff3d3d
+Flat Black = 434343
