@@ -215,12 +215,13 @@
 a.link-button {
     display: inline-block;
     text-decoration: none;
-    background-color: $flat-black;
-    color: $text-color-light;
+    background-color: $flat-white;
+    color: $text-color;
     padding: 6px 12px 6px 12px;
 
     &:hover {
         background-color: $flat-red;
+        color: $text-color-light;
     }
 }
 
