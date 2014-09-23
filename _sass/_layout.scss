@@ -208,16 +208,16 @@
     }
 }
 
-.post-discription {
+.post-description {
     display: block;
 }
 
-a.post-end {
+a.link-button {
     display: inline-block;
     text-decoration: none;
     background-color: $flat-black;
     color: $text-color-light;
-    padding: 7px 15px 7px 15px;
+    padding: 6px 12px 6px 12px;
 
     &:hover {
         background-color: $flat-red;
