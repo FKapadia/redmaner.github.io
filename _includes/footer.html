@@ -2,13 +2,10 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <li>{{ site.title }}</li>
-	  <li>{{ site.copyright }}</li>
+          <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
         </ul>
       </div>
 
@@ -27,7 +24,11 @@
             </a>
           </li>
           {% endif %}
+        </ul>
+      </div>
 
+      <div class="footer-col  footer-col-1">
+        <ul class="social-media-list">
           {% if site.twitter_username %}
           <li>
             <a href="https://twitter.com/{{ site.twitter_username }}">
@@ -45,9 +46,6 @@
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">{{ site.description }}</p>
-      </div>
     </div>
 
   </div>
