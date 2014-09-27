@@ -41,6 +41,25 @@ layout: default
       <li class="next disabled"><a>Next &rarr;</a>
     {% endif %}
     </ul>
+
+
+    <div class="share-footer">
+    	<div class="g-plusone" data-size="medium"></div>
+        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a><br>
+    </div>
+
+    <script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	}(document, 'script'));
+    </script>    
+
     {% include JB/comments %}
 
 </div>
