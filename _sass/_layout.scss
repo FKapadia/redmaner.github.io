@@ -60,10 +60,6 @@
         border-radius: 5px;
         text-align: right;
 
-        .page-link {
-            color: $text-color;
-        }
-
         .menu-icon {
             display: block;
             float: right;
@@ -94,6 +90,7 @@
         }
 
         .page-link {
+            color: $text-color;
             display: block;
             padding: 5px 10px;
         }
