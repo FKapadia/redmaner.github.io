@@ -36,7 +36,6 @@
     }
 
     .page-link {
-        display: inline-block;
         color: $text-color-light;
         line-height: $base-line-height;
         font-weight: bold;
@@ -53,7 +52,6 @@
     }
 
     @include media-query($on-palm) {
-        color: $text-color;
         position: absolute;
         top: 9px;
         right: 30px;
@@ -61,6 +59,10 @@
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
+
+        .page-link {
+            color: $text-color;
+        }
 
         .menu-icon {
             display: block;
