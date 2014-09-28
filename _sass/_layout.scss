@@ -36,8 +36,10 @@
     }
 
     .page-link {
-        color: $flat-red;
+        display: inline-block;
+        color: $text-color-light;
         line-height: $base-line-height;
+        font-weight: bold;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -45,8 +47,8 @@
         }
 
     	&:hover {
-            color: $flat-black;
-            text-decoration: underline;
+            color: $flat-red;
+            text-decoration: none;
         }
     }
 
@@ -215,8 +217,8 @@
 a.link-button {
     display: inline-block;
     text-decoration: none;
-    background-color: $flat-white;
-    color: $flat-black;
+    background-color: $flat-black;
+    color: $text-color-light;
     padding: 3px 6px 3px 6px;
 
     &:hover {
@@ -289,14 +291,15 @@ a.link-button {
 }
 
 .pagination>li>a,.pagination>li>span {
+     color: $text-color-light;
      position:relative;
      float:left;
      padding:6px 12px;
      margin-left:-1px;
      line-height:1.428571429;
      text-decoration:none;
-     background-color:#fff;
-     border:1px solid #ddd
+     background-color: $flat-black;
+     border:1px solid #000
 }
 
 .pagination>li:first-child>a,.pagination>li:first-child>span {
@@ -311,18 +314,26 @@ a.link-button {
 }
 
 .pagination>li>a:hover,.pagination>li>span:hover,.pagination>li>a:focus,.pagination>li>span:focus {
-      background-color:#eee
+      color: $text-color-light;
+      background-color:$flat-red;
 }
 
 .pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover,.pagination>.active>a:focus,.pagination>.active>span:focus{
-     z-index:2;color:#fff;cursor:default;background-color:#428bca;border-color:#428bca
+     z-index:2;color:#fff;
+     cursor:default;
+     background-color:#428bca;
+     border-color:#428bca
 }
 
 .pagination>.disabled>span,.pagination>.disabled>span:hover,.pagination>.disabled>span:focus,.pagination>.disabled>a,.pagination>.disabled>a:hover,.pagination>.disabled>a:focus{
      color:#999;
      cursor:not-allowed;
-     background-color:#fff;
-     border-color:#ddd
+     background-color:$flat-black;
+     border-color:#000
+
+     &hover {
+           background-color:$flat-black;
+     }
 }
 
 .pagination-lg>li>a,.pagination-lg>li>span{

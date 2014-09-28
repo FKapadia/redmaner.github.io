@@ -89,11 +89,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $flat-red;
     text-decoration: none;
 
     &:visited {
-        color: $brand-color;
+        color: $flat-red;
     }
 
     &:hover {
@@ -153,6 +153,12 @@ pre {
 /**
  * Wrapper
  */
+.wrapper-dark {
+    background-color: $bg-color-dark;
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper {
     max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
     max-width:         calc(800px - (#{$spacing-unit} * 2));
@@ -169,7 +175,6 @@ pre {
         padding-left: $spacing-unit / 2;
     }
 }
-
 
 
 /**
@@ -212,5 +217,5 @@ pre {
 
 
 .title-black {
-	color: $flat-black;
+	color: $text-color-light;
 }
