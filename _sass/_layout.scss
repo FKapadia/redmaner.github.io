@@ -235,21 +235,21 @@ a.link-button {
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+    margin-bottom: 0;
 }
 
 .post-title {
-    font-size: 36px;
+    font-size: 40px;
     letter-spacing: -1px;
     line-height: 1;
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        font-size: 40px;
     }
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+    margin-bottom: 0;
 
     h2 {
         font-size: 32px;
